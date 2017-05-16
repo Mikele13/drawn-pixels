@@ -1,0 +1,21 @@
+
+.item:nth-child(1) {
+    background-color: white;
+    height: auto;
+}
+
+.item:nth-child(2) {
+    background-color: white;
+    display: flex;
+}
+
+#button1 {
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: indianred;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+}

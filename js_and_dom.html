@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Structure</title>
+    <meta charset="utf-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="style_js_and_dom_nth-child.css" type="text/css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="row-top">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="pictures/mouseover2.png"; onmouseover="src='pictures/mouseover1.png';" onmouseout="src='pictures/mouseover2.png';">
+                </a>   
+            </div>
+            <div id="navi">
+                <a href="index.html">home</a>
+                <a href="#">about</a>
+                <a href="js_and_dom.html">javascript</a>
+                <a href="#">contact</a>
+            </div>
+        </div>
+        
+        <div class="base">
+            
+        </div>
+        
+        <div class="row-middle">
+            <div class="item">
+                <h1>headline</h1>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>     
+            </div>
+            
+            
+            <div class="item">
+                <button id="button1" type="button" onclick="textFunction()">Inhalt ändern</button>
+                <button id="button1" type="button" onclick="styleFunction()">Style ändern</button>
+                <button id="button1" type="button" onclick="displayDate()">Button 3</button>
+            </div>
+            
+            <div class="item">
+                <h2>absatz 1</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>     
+            </div>
+            <div class="item">
+                <h2>absatz 2</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>     
+            </div>
+            <div class="item">
+                <h2>absatz 3</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>     
+            </div>
+        </div>
+        <div class="row-bottom">
+             <div class="item">   
+            </div>
+        </div>
+    </div>
+    
+    
+    
+<script>
+ 
+var textFunction = function() {
+    var items = document.getElementsByClassName("item");
+    var item3 = items[2];
+    item3.innerHTML = "<h2>Hello World</h2><p>Dies ist ein Absatz. Hier steht ganz viel Text drin. Hier steht ganz viel Text drin. Hier steht ganz viel Text drin. Hier steht ganz viel Text drin.</p>";
+};
+
+  
+var styleFunction = function() {
+    var itemStyle = document.getElementsByClassName("item");
+    var item3Style = itemStyle[2];
+    /*
+    itemStyle[2].setAttribute("style", "background-color: blue; color: white;");
+    */
+    itemStyle[2].style = "background-color: blue; color: white;";
+};
+
+
+var createElem = document.createElement("h1");
+    
+    
+    
+    
+/*
+function displayDate() {
+    document.getElementById("demo1").innerHTML = Date();
+}    
+
+   
+function addText() {
+    document.getElementById('demo2').addEventListener("click", addText);
+}    
+
+
+function addDiv(){
+    document.createElement('div');
+    div.textContent = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
+    document.body.appendChild(div);
+    div.addEventListener('onclick');
+}
+
+    document.getElementById('demo').onclick = function() {
+        // Create div element
+        var div = document.createElement('div');
+        // Add text to div
+        div.textContent = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
+        // Append Element to Listener
+        document.body.appendChild(div);
+        div.addEventListener('onclick');
+    }
+*/    
+    
+</script>
+</body>
+
+</html>
+    
+  
